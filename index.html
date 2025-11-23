@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボイスじゃんけん</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- タイトル画面 -->
+    <div id="title-screen" class="screen active">
+        <h1>ボイスじゃんけん</h1>
+
+        <div class="card">
+            <p>声で「グー・チョキ・パー」を言って勝負！</p>
+            <button id="start-btn">♪ ゲームをはじめる ♪</button>
+        </div>
+    </div>
+
+    <!-- ゲーム画面 -->
+    <div id="game-screen" class="screen">
+
+        <div class="card">
+            <h2>あなたの手：<span id="player-hand">---</span></h2>
+            <h2>相手の手：<span id="enemy-hand">---</span></h2>
+
+            <!-- 認識中 -->
+            <div id="listening-status" class="listening" style="display:none;">
+                🎤 聞き取っています…
+            </div>
+
+            <h2><span id="result">---</span></h2>
+
+            <button id="mic-btn">🎤 音声スタート</button>
+
+            <!-- ここがカウンター表示エリア -->
+            <div class="counter-box">
+                <p>勝ち：<span id="count-win">0</span></p>
+                <p>負け：<span id="count-lose">0</span></p>
+                <p>あいこ：<span id="count-draw">0</span></p>
+                <p>総プレイ回数：<span id="count-total">0</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 光の粒 -->
+    <div class="particle" style="left:15%; animation-delay:1.2s; animation-duration:11s;"></div>
+    <div class="particle" style="left:25%; animation-delay:3.1s; animation-duration:15s;"></div>
+    <div class="particle" style="left:45%; animation-delay:0.8s; animation-duration:10s;"></div>
+    <div class="particle" style="left:60%; animation-delay:2.3s; animation-duration:13s;"></div>
+    <div class="particle" style="left:80%; animation-delay:1.8s; animation-duration:9s;"></div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
