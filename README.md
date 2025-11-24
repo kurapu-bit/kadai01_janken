@@ -5,7 +5,7 @@ Bubble Voice Janken
 - 声で操作するじゃんけんゲーム。音声認識で対戦し、勝敗を記録できるアプリ
 
 ## ③アプリのデプロイURL
-デプロイしている場合はURLを記入（任意）
+https://kurapu-bit.github.io/kadai01_janken/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - 無し
